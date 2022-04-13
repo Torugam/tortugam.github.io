@@ -1,0 +1,349 @@
+*{
+    margin: 2px;
+}
+
+
+
+/*
+PARA PANTALLAS CON UN ANCHO MENOR A 
+680PX
+*/
+body
+{
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    background-image: url(https://static.wikia.nocookie.net/cuphead/images/0/08/Site-background-dark/revision/latest?cb=20210702175300);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    width: auto;
+}
+
+.foto1{
+    width: 66px;
+    height: 66px;
+    float: left;
+}
+
+.foto2{
+    width: 130px;
+    float: left;
+    margin-top: 20px;
+    margin-right: 7px;
+}
+
+
+
+
+
+
+article{
+    background-color: #ece8e8;
+    color: black;
+    text-align: center;
+    padding: 25px;
+    width: 100%;
+}
+
+.slider{
+    width: 100%;
+    overflow: hidden;
+    padding: auto;
+    position: relative;
+    
+}
+
+.slider ul{
+    display: flex;
+    padding: 0;
+    width: 500%;
+
+    animation: cambio 20s infinite alternate;
+    
+
+}
+
+.slider li{
+    width: 100%;
+    list-style: none;
+
+}
+
+.slider img{
+    width: 100%;
+    align-items: center;
+
+}
+
+.text1{
+    color: #2C2C2C;
+    text-align: justify;
+}
+
+.text2 img {
+    float: center;
+    width: 100%;
+}
+
+.text2 .subtext1{
+    color: #3f3451;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 42px;
+}
+
+.text2 .subtext2{
+    color: #2C2C2C;
+    text-align: justify;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+.text3{
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+.text3 .foto3{
+    width: 106px;
+    height: 126px;
+    margin-right: 49px;
+}
+
+
+.text3 input{
+    padding: 12.6px 21px;
+    background-color: #3f3451;
+    font-size: 21px;
+    color: #ece8e8;
+    border-radius: 9px;
+    box-sizing: border-box;
+    font-weight: 600;
+}
+
+.contenedor p{
+    color: #2C2C2C;
+    text-align: justify;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+.contenedor img{
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: right;
+    padding: 25px;
+    font-size: 13px;
+}
+
+@keyframes cambio {
+    0% {margin-left: 0;}
+    15% {margin-left: 0;}
+
+    20% {margin-left: -100%;}
+    40% {margin-left: -100%;}
+
+    45% {margin-left: -200%;}
+    65% {margin-left: -200%;}
+
+    70% {margin-left: -300%;}
+    90% {margin-left: -300%;}
+
+    95% {margin-left: -400%;}
+    115% {margin-left: -400%;}
+}
+
+/*
+PARA PANTALLAS CON UN ANCHO MENOR A 
+374PX
+*/
+@media screen and (max-width: 374px)
+{
+
+    body
+{
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+}
+
+
+    div .text3{
+        width: 80%;
+    display: block;
+    margin: auto;
+    }
+
+    div .text3 .foto3{
+        margin-right: 10px;
+    }
+
+    div .text3 input{
+        margin: 0px;
+    }
+
+   
+
+    footer{
+        font-size: 7px;
+    }
+
+}
+
+
+/*
+PARA PANTALLAS MAS GRANDES DE 680PX
+*/
+
+@media screen and (min-width: 680px)
+{
+    body
+{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+nav{
+    color: #fff;
+    margin-top: 15px;
+    width: auto;
+}
+
+
+article{
+    background-color: #ece8e8;
+    color: black;
+    text-align: center;
+    width: 120%;
+    padding: 25px;
+}
+
+div .text3{
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+div .text3 .foto3{
+    margin-right: 10px;
+}
+
+div .text3 input{
+    margin: 0px;
+}
+
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    border-radius: 15px;
+}
+main{
+    display: flex;
+    flex-direction: row;
+}
+.article-help{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+}
+
+
+
+/*
+PARA PANTALLAS MAS GRANDES DE 1200PX
+*/
+
+@media screen and (min-width: 1200px)
+{
+    body
+    {
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+    }
+    header{
+        color: white;
+        text-align: center;
+        padding: 25px;
+    }
+    nav{
+        color: #fff;
+        margin-top: 15px;
+        width: auto;
+    }
+    
+    
+    
+    article{
+        background-color: #ece8e8;
+        color: black;
+        text-align: center;
+        width: 100%;
+        padding: 25px;
+    }
+    
+    div .text3{
+        width: 80%;
+    display: block;
+    margin: auto;
+    }
+    
+    div .text3 .foto3{
+        width: 106px;
+        height: 126px;
+    margin-right: 49px;
+    }
+    
+    
+    div .text3 input{
+        padding: 12.6px 21px;
+        background-color: #3f3451;
+        font-size: 21px;
+        color: #ece8e8;
+        border-radius: 9px;
+        box-sizing: border-box;
+        font-weight: 600;
+    }
+    
+    
+    footer{
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 25px;
+        border-radius: 15px;
+    }
+    main{
+        display: flex;
+        flex-direction: row;
+    }
+    .article-help{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+}
+
+
+
